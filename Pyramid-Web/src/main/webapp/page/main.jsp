@@ -28,7 +28,7 @@
     <!-- 1. navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top"
         role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <div class="menu style-1">
                 <ul class="menu">
                     <li><a href="<%=basePath%>">Home</a></li>

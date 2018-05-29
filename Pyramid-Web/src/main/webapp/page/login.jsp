@@ -34,7 +34,7 @@
     <!-- 1. navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top"
         role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle"
                     data-toggle="collapse"
@@ -72,7 +72,7 @@
         </div>
     </div>
     <!-- 2. Main jumbotron for a primary marketing message or call to action -->
-    <div class="container" style="height: 515px; margin-top: 65px;">
+    <div class="container-fluid" style="height: 515px; margin-top: 65px;">
         <div class="carousel slide" id="login-carousel"
             data-ride="carousel">
             <ol class="carousel-indicators">
@@ -126,14 +126,16 @@
     </div>
     <!-- 3. footer -->
     <div class="footer" align="center">
-        <p class="text-muted">&copy; PYRAMID Platform By L.M. On
-            July 2014</p>
+        <div class="container-fluid">
+            <p class="text-muted">&copy; PYRAMID Platform By L.M. On
+                2014.July</p>
+        </div>
     </div>
     <!-- /container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <%-- <script src="<%=path%>/js/jquery.min.js"></script>
-    <script src="<%=path%>/js/bootstrap.min.js"></script> --%>
+    <%-- <script src="<%=path%>/js/jquery/jquery.min.js"></script>
+    <script src="<%=path%>/js/bootstrap/bootstrap.min.js"></script> --%>
 </body>
 </html>

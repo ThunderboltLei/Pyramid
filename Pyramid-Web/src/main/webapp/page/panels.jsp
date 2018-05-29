@@ -28,7 +28,7 @@
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top"
         role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <div class="menu style-1">
                 <ul class="menu">
                     <li><a href="<%=basePath%>">Home</a></li>
@@ -215,7 +215,7 @@
     </div>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-        <div class="container">
+        <div class="container-fluid">
             <h1>Hello, world!</h1>
             <p>This is a template for a simple marketing or
                 informational website. It includes a large callout
@@ -228,7 +228,7 @@
             </p>
             <div class="container"></div>
         </div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
                     <div class="panel panel-default">
@@ -363,7 +363,7 @@
         </div>
     </div>
     <div class="footer" align="center">
-        <div class="container">
+        <div class="container-fluid">
             <p class="text-muted">&copy; PYRAMID Platform By L.M. On
                 2014.July</p>
         </div>

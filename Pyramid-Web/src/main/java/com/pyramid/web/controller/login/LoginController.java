@@ -59,8 +59,7 @@ public class LoginController extends BaseController {
 	 */
 	@ResponseBody
 	@RequestMapping(value = "isRegisted")
-	public Map<String, String> isRegisted(HttpServletRequest request,
-			HttpServletResponse response, Model model) {
+	public Map<String, String> isRegisted(HttpServletRequest request, HttpServletResponse response, Model model) {
 		String loginEMail = request.getParameter("loginEMail");
 		String loginPassword = request.getParameter("loginPassword");
 
@@ -94,12 +93,10 @@ public class LoginController extends BaseController {
 	 * @throws IOException
 	 */
 	@RequestMapping(value = "toLogin")
-	public String toLogin(HttpServletRequest request,
-			HttpServletResponse response, Model model) throws IOException {
+	public String toLogin(HttpServletRequest request, HttpServletResponse response, Model model) throws IOException {
 		String email = request.getParameter("loginEMail");
 		String password = request.getParameter("loginPassword");
-		logger.info("----- login -----\nemail: " + email + ", password: "
-				+ password);
+		logger.info("----- login -----\nemail: " + email + ", password: " + password);
 
 		// boolean bool = loginService.login(email, password);
 		// return bool == true ? "/page/main.jsp" : "/page/error.jsp";
@@ -115,9 +112,9 @@ public class LoginController extends BaseController {
 	 * @throws IOException
 	 */
 	@RequestMapping(value = "toRegister")
-	public String toRegister(HttpServletRequest request,
-			HttpServletResponse response, Model model) throws IOException {
+	public String toRegister(HttpServletRequest request, HttpServletResponse response, Model model) throws IOException {
 		logger.info("----- toRegister -----");
 		return "/page/panels.jsp";
+		// return "/page/dashboard.jsp";
 	}
 }
