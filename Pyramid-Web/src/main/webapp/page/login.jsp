@@ -127,7 +127,7 @@
         </div>
     </div>
     <!-- 3. footer -->
-    <div id="footer" class="footer" align="center">
+    <div id="footer">
         <script type="text/javascript">
         $(function(){
             $("#footer").load("<%=path%>/page/footer.html");
