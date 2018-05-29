@@ -1,17 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%
-    String basePath = request.getParameter("basePath"); 
-    System.out.println(basePath);
+	String path = request.getParameter("path");
+	String basePath = request.getParameter("basePath");
 %>
 <!-- header -->
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="menu style-1">
             <ul class="menu">
-                <li><a href="<%=basePath%>"><span
+                <li><a href='<%=basePath%>'><span
                         class="glyphicon glyphicon-home"></span> Home</a></li>
                 <li><a
                     href="http://sc.chinaz.com/?categories-archives/"
-                    class="arrow">Categories</a> <!-- <div class="mega-menu full-width"> full-width设置菜单为页面宽度-->
+                    class="arrow">Categories</a> <!-- <div class="mega-menu full-width"> full-widthè®¾ç½®èåä¸ºé¡µé¢å®½åº¦-->
                     <div class="mega-menu">
                         <div class="col-1">
                             <h4>

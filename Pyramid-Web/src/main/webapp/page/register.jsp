@@ -164,5 +164,13 @@
             不支持IE8及以下浏览器。</p>
         </p>
     </div>
+    <!-- 3.footer -->
+    <div id="footer">
+        <script type="text/javascript">
+        $(function(){
+            $("#footer").load("<%=path%>/page/footer.html");
+        })
+        </script>
+    </div>
 </body>
 </html>
