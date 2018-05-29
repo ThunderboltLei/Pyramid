@@ -23,8 +23,10 @@
 <script type="text/javascript" src="<%=path%>/js/jquery/jquery.min.js"></script>
 <script type="text/javascript"
     src="<%=path%>/js/bootstrap/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+
 </head>
-<body>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top"
         role="navigation">
@@ -362,11 +364,13 @@
             </div>
         </div>
     </div>
-    <div class="footer" align="center">
-        <div class="container-fluid">
-            <p class="text-muted">&copy; PYRAMID Platform By L.M. On
-                2014.July</p>
-        </div>
+    <!-- footer -->
+    <div id="footer" class="footer" align="center">
+        <script type="text/javascript">
+        $(function(){
+            $("#footer").load("<%=path%>/page/footer.html");
+        })
+        </script>
     </div>
     <!-- /container -->
     <!-- Bootstrap core JavaScript

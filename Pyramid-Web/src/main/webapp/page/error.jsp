@@ -74,8 +74,8 @@
                 <div class="col-md-3 text-center">
                     <h2>Quick Links</h2>
                     <hr />
-                    <a href="<%=basePath%>" class="btn btn-info">Navigate to
-                        Home Page</a>
+                    <a href="<%=basePath%>" class="btn btn-info">Navigate
+                        to Home Page</a>
                     <hr />
                     <a
                         href="mailto:help@admindomain.com?Subject=Hello%20Subject"
@@ -101,11 +101,12 @@
     <!--     </div> -->
     <!-- HEADER DIV REPLICATE END -->
     <!-- 3. footer -->
-    <div class="footer" align="center">
-        <div class="container-fluid">
-            <p class="text-muted">&copy; PYRAMID Platform By L.M. On
-                2014.July</p>
-        </div>
+    <div id="footer" class="footer" align="center">
+        <script type="text/javascript">
+        $(function(){
+        	$("#footer").load("<%=path%>/page/footer.html");
+        })
+        </script>
     </div>
     <!-- FOOTER SECTION END -->
     <!-- REQUIRED SCRIPTS FILES -->

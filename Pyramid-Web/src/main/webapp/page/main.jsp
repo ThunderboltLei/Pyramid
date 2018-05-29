@@ -23,6 +23,9 @@
 <script type="text/javascript" src="<%=path%>/js/jquery/jquery.min.js"></script>
 <script type="text/javascript"
     src="<%=path%>/js/bootstrap/bootstrap.min.js"></script>
+    
+<!-- Custom JS -->
+
 </head>
 <body>
     <!-- 1. navbar -->
@@ -310,5 +313,28 @@
         </div>
     </div>
     <!-- 2. content -->
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or
+                informational website. It includes a large callout
+                called a jumbotron and three supporting pieces of
+                content. Use it as a starting point to create something
+                more unique.</p>
+            <p>
+                <a class="btn btn-primary btn-lg" role="button">Learn
+                    more &raquo;</a>
+            </p>
+            <div class="container"></div>
+        </div>
+    </div>
+    <!-- 3.footer -->
+    <div id="footer" class="footer" align="center">
+        <script type="text/javascript">
+        $(function(){
+            $("#footer").load("<%=path%>/page/footer.html");
+        })
+        </script>
+    </div>
 </body>
 </html>

@@ -27,6 +27,8 @@
     src="<%=path%>/js/highcharts/highcharts.js"></script>
 <script type="text/javascript"
     src="<%=path%>/js/highcharts/modules/exporting.js"></script>
+
+<!-- Custom JS -->
 <script type="text/javascript" src="<%=path%>/js/login/login.js"></script>
 <script type="text/javascript" src="<%=path%>/js/login/login-slides.js"></script>
 </head>
@@ -44,7 +46,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="<%=basePath%>"
-                    style="margin-top: -10px;"> <img alt="PYRAMID"
+                    style="margin-top: -10px; line-height: 40px;"> <img style="float:left;" alt="PYRAMID"
                     src="<%=path%>/img/PYRAMID.png"> PYRAMID
                 </a>
             </div>
@@ -125,11 +127,12 @@
         </div>
     </div>
     <!-- 3. footer -->
-    <div class="footer" align="center">
-        <div class="container-fluid">
-            <p class="text-muted">&copy; PYRAMID Platform By L.M. On
-                2014.July</p>
-        </div>
+    <div id="footer" class="footer" align="center">
+        <script type="text/javascript">
+        $(function(){
+            $("#footer").load("<%=path%>/page/footer.html");
+        })
+        </script>
     </div>
     <!-- /container -->
     <!-- Bootstrap core JavaScript

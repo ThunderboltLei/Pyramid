@@ -455,6 +455,14 @@
             </div>
         </div>
     </div>
+    <!-- footer -->
+    <div id="footer" class="footer" align="center">
+        <script type="text/javascript">
+        $(function(){
+            $("#footer").load("<%=path%>/page/footer.html");
+        })
+        </script>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
