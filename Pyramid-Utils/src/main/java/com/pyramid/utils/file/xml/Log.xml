@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<logQueryResult>
+    <log>
+        <logId>11</logId>
+        <idcId>11</idcId>
+        <houseId>11</houseId>
+        <srcIp>11</srcIp>
+        <destIp>11</destIp>
+        <srcPort>11</srcPort>
+        <destPort>11</destPort>
+        <url>11</url>
+        <accessTime>11</accessTime>
+    </log>
+    <log>
+        <logId id="2">22</logId>
+        <idcId>22</idcId>
+        <houseId>22</houseId>
+        <srcIp>22</srcIp>
+        <destIp>22</destIp>
+        <srcPort>22</srcPort>
+        <destPort>22</destPort>
+        <url>22</url>
+        <accessTime>22</accessTime>
+    </log>
+    <log>
+        <logId>33</logId>
+        <idcId>33</idcId>
+        <houseId>33</houseId>
+        <srcIp>33</srcIp>
+        <destIp>33</destIp>
+        <srcPort>33</srcPort>
+        <destPort>33</destPort>
+        <url>33</url>
+        <accessTime>33</accessTime>
+    </log>
+    <log>
+        <logId>44</logId>
+        <idcId>44</idcId>
+        <houseId>44</houseId>
+        <srcIp>44</srcIp>
+        <destIp>44</destIp>
+        <srcPort>44</srcPort>
+        <destPort>44</destPort>
+        <url>44</url>
+        <accessTime>44</accessTime>
+    </log>
+</logQueryResult>
