@@ -115,6 +115,20 @@ public class LoginController extends BaseController {
 	public String toRegister(HttpServletRequest request, HttpServletResponse response, Model model) throws IOException {
 		logger.info("----- toRegister -----");
 		return "/page/panels.jsp";
-		// return "/page/dashboard.jsp";
+	}
+
+	/**
+	 * 
+	 * @param request
+	 * @param response
+	 * @param model
+	 * @return
+	 * @throws IOException
+	 */
+	@RequestMapping(value = "toDashboard")
+	public String toDashboard(HttpServletRequest request, HttpServletResponse response, Model model)
+			throws IOException {
+		logger.info("----- toDashboard -----");
+		return "/page/dashboard.jsp";
 	}
 }

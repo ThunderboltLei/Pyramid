@@ -29,7 +29,11 @@
     href="<%=path%>/css/bootstrap/bootstrap-theme.min.css" />
 <link rel="stylesheet" href="<%=path%>/css/menu/menu.css" />
 <link rel="stylesheet" href="<%=path%>/css/menu/style.css" />
-<link href="<%=path%>/css/dashboard.css" rel="stylesheet">
+<link href="<%=path%>/css/dashboard.css" rel="stylesheet" />
+
+<script type="text/javascript" src="<%=path%>/js/jquery/jquery.min.js"></script>
+<script type="text/javascript"
+    src="<%=path%>/js/bootstrap/bootstrap.min.js"></script>
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -43,38 +47,11 @@
 </head>
 
 <body>
-
-    <!--     <nav class="navbar navbar-inverse navbar-fixed-top"> -->
-    <!--         <div class="container-fluid"> -->
-    <!--             <div class="navbar-header"> -->
-    <!--                 <button type="button" class="navbar-toggle collapsed" -->
-    <!--                     data-toggle="collapse" data-target="#navbar" -->
-    <!--                     aria-expanded="false" aria-controls="navbar"> -->
-    <!--                     <span class="sr-only">Toggle navigation</span> <span -->
-    <!--                         class="icon-bar"></span> <span class="icon-bar"></span> -->
-    <!--                     <span class="icon-bar"></span> -->
-    <!--                 </button> -->
-    <!--                 <a class="navbar-brand" href="#">Project name</a> -->
-    <!--             </div> -->
-    <!--             <div id="navbar" class="navbar-collapse collapse"> -->
-    <!--                 <ul class="nav navbar-nav navbar-right"> -->
-    <!--                     <li><a href="#">Dashboard</a></li> -->
-    <!--                     <li><a href="#">Settings</a></li> -->
-    <!--                     <li><a href="#">Profile</a></li> -->
-    <!--                     <li><a href="#">Help</a></li> -->
-    <!--                 </ul> -->
-    <!--                 <form class="navbar-form navbar-right"> -->
-    <!--                     <input type="text" class="form-control" -->
-    <!--                         placeholder="Search..."> -->
-    <!--                 </form> -->
-    <!--             </div> -->
-    <!--         </div> -->
-    <!--     </nav> -->
     <!-- 1. narbar -->
-    <div id="header">
+    <div id="menu">
         <script type="text/javascript" charset="UTF-8">
         $(function(){
-            $("#header").load('<%=path%>/page/header.jsp', {'basePath':'<%=basePath%>', 'path':'<%=path%>'});
+            $("#menu").load('<%=path%>/page/header.jsp', {'basePath':'<%=basePath%>', 'path':'<%=path%>'});
         })
         </script>
     </div>
@@ -275,7 +252,7 @@
             </div>
         </div>
     </div>
-    <!-- footer -->
+    <!-- 3. footer -->
     <div id="footer">
         <script type="text/javascript">
         $(function(){

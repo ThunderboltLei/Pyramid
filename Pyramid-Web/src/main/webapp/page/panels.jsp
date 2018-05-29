@@ -29,10 +29,10 @@
 </head>
 <body>
     <!-- 1. navbar -->
-    <div id="header">
+    <div id="menu">
         <script type="text/javascript" charset="UTF-8">
         $(function(){
-            $("#header").load('<%=path%>/page/header.jsp', {'basePath':'<%=basePath%>', 'path':'<%=path%>'});
+            $("#menu").load('<%=path%>/page/header.jsp', {'basePath':'<%=basePath%>', 'path':'<%=path%>'});
         })
         </script>
     </div>
