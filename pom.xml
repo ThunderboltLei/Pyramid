@@ -1,0 +1,316 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.pyramid</groupId>
+    <artifactId>Pyramid</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+    <name>Pyramid</name>
+    <properties>
+        <project>
+            Pyramid
+        </project>
+        <springframework.version>4.3.17.RELEASE</springframework.version>
+        <springframework.security.version>4.2.6.RELEASE</springframework.security.version>
+    </properties>
+    <modules>
+        <module>Pyramid-Web</module>
+        <module>Pyramid-RPC</module>
+        <module>Pyramid-Service</module>
+        <module>Pyramid-Utils</module>
+        <module>Pyramid-DAO</module>
+        <module>Pyramid-DB</module>
+        <module>Pyramid-Entity</module>
+    </modules>
+    <dependencies>
+        <!-- commons-httpclient -->
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <!-- commons-io -->
+        <!-- <dependency> -->
+        <!-- <groupId>commons-io</groupId> -->
+        <!-- <artifactId>commons-io</artifactId> -->
+        <!-- <version>2.4</version> -->
+        <!-- </dependency> -->
+        <!-- commons-dbcp -->
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <!-- <dependency> -->
+        <!-- <groupId>commons-beanutils</groupId> -->
+        <!-- <artifactId>commons-beanutils</artifactId> -->
+        <!-- <version>1.9.1</version> -->
+        <!-- </dependency> -->
+        <!-- log4j: nested exception is java.lang.NoSuchFieldError: TRACE 
+            此报错说明log4j版本过低 -->
+        <!-- <dependency> -->
+        <!-- <groupId>log4j</groupId> -->
+        <!-- <artifactId>log4j</artifactId> -->
+        <!-- <version>1.2.14</version> -->
+        <!-- </dependency> -->
+        <!-- solr -->
+        <dependency>
+            <groupId>org.apache.solr</groupId>
+            <artifactId>solr-core</artifactId>
+            <version>4.6.0</version>
+        </dependency>
+        <!-- 测试分词 -->
+        <dependency>
+            <groupId>com.janeluo</groupId>
+            <artifactId>ikanalyzer</artifactId>
+            <version>2012_u6</version>
+        </dependency>
+        <!-- mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.30</version>
+        </dependency>
+        <!-- hibernate-c3p0 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>4.1.8.Final</version>
+        </dependency>
+        <!-- hibernate-envers -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-envers</artifactId>
+            <version>4.1.8.Final</version>
+        </dependency>
+        <!-- hibernate-proxool -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-proxool</artifactId>
+            <version>4.1.8.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.8.1</version>
+        </dependency>
+        <!-- *************************************************** -->
+        <!-- springframework-beans -->
+        <!-- <dependency> -->
+        <!-- <groupId>org.springframework</groupId> -->
+        <!-- <artifactId>spring-beans</artifactId> -->
+        <!-- <version>${springframework.version}</version> -->
+        <!-- </dependency> -->
+        <!-- springframework-core -->
+        <!-- <dependency> -->
+        <!-- <groupId>org.springframework</groupId> -->
+        <!-- <artifactId>spring-core</artifactId> -->
+        <!-- <version>${springframework.version}</version> -->
+        <!-- </dependency> -->
+        <!-- springframework-aop -->
+        <!-- <dependency> -->
+        <!-- <groupId>org.springframework</groupId> -->
+        <!-- <artifactId>spring-aop</artifactId> -->
+        <!-- <version>${springframework.version}</version> -->
+        <!-- </dependency> -->
+        <!-- springframework-asm <dependency> <groupId>com.eversec.everone</groupId> 
+            <artifactId>org.springframework.asm-3.1.0.RELEASE</artifactId> <version>3.1.0</version> 
+            </dependency> -->
+        <!-- springframework-aspects -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!-- springframework-context -->
+        <!-- <dependency> -->
+        <!-- <groupId>org.springframework</groupId> -->
+        <!-- <artifactId>spring-context</artifactId> -->
+        <!-- <version>${springframework.version}</version> -->
+        <!-- </dependency> -->
+        <!-- springframework-context-support -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!-- springframework-jdbc -->
+        <!-- <dependency> -->
+        <!-- <groupId>org.springframework</groupId> -->
+        <!-- <artifactId>spring-jdbc</artifactId> -->
+        <!-- <version>${springframework.version}</version> -->
+        <!-- </dependency> -->
+        <!-- springframework-web -->
+        <!-- <dependency> -->
+        <!-- <groupId>org.springframework</groupId> -->
+        <!-- <artifactId>spring-web</artifactId> -->
+        <!-- <version>${springframework.version}</version> -->
+        <!-- </dependency> -->
+        <!-- springframework-web-servlet -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!-- springframework-expression -->
+        <!-- <dependency> -->
+        <!-- <groupId>org.springframework</groupId> -->
+        <!-- <artifactId>spring-expression</artifactId> -->
+        <!-- <version>${springframework.version}</version> -->
+        <!-- </dependency> -->
+        <!-- springframework-instrument -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-instrument</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!-- springframework-instrument-tomcat -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-instrument-tomcat</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!-- springframework-jms -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!-- springframework-orm -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!-- springframework-oxm -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-oxm</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!-- springframework-test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!-- springframework-transaction -->
+        <!-- <dependency> -->
+        <!-- <groupId>org.springframework</groupId> -->
+        <!-- <artifactId>spring-tx</artifactId> -->
+        <!-- <version>${springframework.version}</version> -->
+        <!-- </dependency> -->
+        <!-- springframework-web-struts -->
+        <!-- <dependency> -->
+        <!-- <groupId>com.eversec.everone</groupId> -->
+        <!-- <artifactId>org.springframework.web.struts-3.1.0.RELEASE</artifactId> -->
+        <!-- <version>3.1.0</version> -->
+        <!-- </dependency> -->
+        <!-- <dependency> -->
+        <!-- <groupId>org.springframework</groupId> -->
+        <!-- <artifactId>spring-webmvc-struts</artifactId> -->
+        <!-- <version>2.5.6</version> -->
+        <!-- </dependency> -->
+        <!-- ********************************************************* -->
+        <!-- xstream -->
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.4</version>
+        </dependency>
+        <!-- xpath <dependency> <groupId>org.apache.tika</groupId> <artifactId>tika-server</artifactId> 
+            <version>1.2</version> </dependency> -->
+        <!-- spring-security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${springframework.security.version}</version>
+        </dependency>
+        <!-- <dependency> -->
+        <!-- <groupId>org.springframework.security</groupId> -->
+        <!-- <artifactId>spring-security-web</artifactId> -->
+        <!-- <version>${springframework.security.version}</version> -->
+        <!-- </dependency> -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+            <version>${springframework.security.version}</version>
+        </dependency>
+        <!-- <dependency> -->
+        <!-- <groupId>org.springframework.security</groupId> -->
+        <!-- <artifactId>spring-security-core</artifactId> -->
+        <!-- <version>${springframework.security.version}</version> -->
+        <!-- </dependency> -->
+        <!-- SEVERE: Exception sending context initialized event to listener 
+            instance of class org.springframework.web.context.ContextLoaderListener java.lang.NoClassDefFoundError: 
+            org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.6.12</version>
+        </dependency>
+        <dependency>
+            <groupId>net.minidev</groupId>
+            <artifactId>json-smart</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <!-- Exception: Cannot proxy target class because CGLIB2 is not available. -->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <!-- ***** Maven项目下HttpServletRequest或 HttpServletResponse需引用的依赖包: 
+            servlet-api.jar，并将scope设置为provided。 ***** -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+            <classifier>jdk15</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.htmlparser</groupId>
+            <artifactId>htmlparser</artifactId>
+            <version>2.1</version>
+        </dependency>
+<!--         <dependency> -->
+<!--             <groupId>com.sun.jersey.contribs</groupId> -->
+<!--             <artifactId>jersey-spring</artifactId> -->
+<!--             <version>1.18.6</version> -->
+<!--             <exclusions> -->
+<!--                 <exclusion> -->
+<!--                     <groupId>org.springframework</groupId> -->
+<!--                     <artifactId>spring-core</artifactId> -->
+<!--                 </exclusion> -->
+<!--                 <exclusion> -->
+<!--                     <groupId>org.springframework</groupId> -->
+<!--                     <artifactId>spring-beans</artifactId> -->
+<!--                 </exclusion> -->
+<!--                 <exclusion> -->
+<!--                     <groupId>org.springframework</groupId> -->
+<!--                     <artifactId>spring-context</artifactId> -->
+<!--                 </exclusion> -->
+<!--                 <exclusion> -->
+<!--                     <groupId>org.springframework</groupId> -->
+<!--                     <artifactId>spring-web</artifactId> -->
+<!--                 </exclusion> -->
+<!--                 <exclusion> -->
+<!--                     <groupId>org.springframework</groupId> -->
+<!--                     <artifactId>spring-aop</artifactId> -->
+<!--                 </exclusion> -->
+<!--             </exclusions> -->
+<!--         </dependency> -->
+    </dependencies>
+
+</project>
