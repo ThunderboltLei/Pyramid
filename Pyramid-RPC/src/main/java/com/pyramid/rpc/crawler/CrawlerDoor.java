@@ -227,6 +227,9 @@ public class CrawlerDoor {
 						if (link.contains("item.jd.com")) {
 							System.out.println(
 									"\tvisitUrl: " + link + ", unVisitedUrl: " + linkQueue.getUnvisitedUrlNum());
+						} else if(link.contains("csdn.net")) {
+							System.out.println(
+									"\tvisitUrl: " + link + ", unVisitedUrl: " + linkQueue.getUnvisitedUrlNum());
 						}
 
 						try {
@@ -251,6 +254,8 @@ public class CrawlerDoor {
 		 * 正则验证URL是不是同一个网站
 		 */
 		LinkFilter filter = new LinkFilter() {
+			
+			@Override
 			public boolean accept(String url) {
 				return URLUtil.getInstance().regexStart(url);
 			}

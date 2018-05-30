@@ -13,6 +13,7 @@ public class URLUtil {
 	 * 正则验证URL是不是同一个网站
 	 */
 	private LinkFilter linkFilter = new LinkFilter() {
+		@Override
 		public boolean accept(String url) {
 			return regexStart(url);
 		}
@@ -26,11 +27,21 @@ public class URLUtil {
 	 */
 	public boolean regexStart(String url) {
 		boolean bool = false;
+		String strRegex = null;
+		if (url.toLowerCase().contains("csdn")) {
+			strRegex = "^(http|https|ftp|)?(://)([a-z0-9]*\\.)*" + Constant.CSDN
+					+ "\\.net/article(/([\\s\\S]))*(\\.?(\\w\\W)*)(\\?)?(((\\w\\W*%)*(\\w\\W*\\?)*(\\w\\W*:)*(\\w\\W*\\+)*(\\w\\W*\\.)*(\\w\\W*&)*(\\w\\W*-)*(\\w\\W*=)*(\\w\\W*%)*(\\w\\W*\\?)*(\\w\\W*:)*(\\w\\W*\\+)*(\\w\\W*\\.)*(\\w\\W*&)*(\\w\\W*-)*(\\w\\W*=)*)*(\\w\\W*)*)$";
+
+		} else if (url.toLowerCase().contains("jd")) {
+			strRegex = "^(http:|https:|ftp:|)*(//)([a-z0-9]*\\.)*" + Constant.JD + "\\.com/(/([\\s\\S]))*";
+		}
 		//// 原始
 		// String strRegex = "^(http|https|ftp|)?(://)([a-z0-9]*\\.)*" + Constant.CSDN
 		// +
 		// "\\.net/article(/([\\s\\S]))*(\\.?(\\w\\W)*)(\\?)?(((\\w\\W*%)*(\\w\\W*\\?)*(\\w\\W*:)*(\\w\\W*\\+)*(\\w\\W*\\.)*(\\w\\W*&)*(\\w\\W*-)*(\\w\\W*=)*(\\w\\W*%)*(\\w\\W*\\?)*(\\w\\W*:)*(\\w\\W*\\+)*(\\w\\W*\\.)*(\\w\\W*&)*(\\w\\W*-)*(\\w\\W*=)*)*(\\w\\W*)*)$";
-		String strRegex = "^(http:|https:|ftp:|)*(//)([a-z0-9]*\\.)*" + Constant.JD + "\\.com/(/([\\s\\S]))*";
+		//// JD
+		// String strRegex = "^(http:|https:|ftp:|)*(//)([a-z0-9]*\\.)*" + Constant.JD +
+		// "\\.com/(/([\\s\\S]))*";
 		if (!url.trim().isEmpty()) {
 			Pattern pattern = Pattern.compile(strRegex, Pattern.CASE_INSENSITIVE);
 			Matcher matcher = pattern.matcher(url);

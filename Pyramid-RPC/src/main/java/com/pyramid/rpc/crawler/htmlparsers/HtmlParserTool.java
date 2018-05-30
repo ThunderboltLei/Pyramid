@@ -50,13 +50,13 @@ public class HtmlParserTool {
 					if (filter.accept(linkUrl)) {
 
 						// Stratgy for JD
-						if (linkUrl.contains("jd.com")) {
+//						if (linkUrl.contains("jd.com")) {
 							if (!linkUrl.contains("http") || !linkUrl.contains("https")) {
 								links.add("https:" + linkUrl);
 							} else {
 								links.add(linkUrl);
 							}
-						}
+//						}
 						// else {
 						// links.add(linkUrl);
 						// }
