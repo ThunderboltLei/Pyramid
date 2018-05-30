@@ -1,7 +1,9 @@
 package com.pyramid.rpc.crawler;
 
 import java.io.File;
+import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,6 +33,8 @@ public class CrawlerDoor {
 
 	private LinkQueue linkQueue = null;
 
+	private ConcurrentLinkedQueue conLinkedQueue = new ConcurrentLinkedQueue<>();
+	
 	public CrawlerDoor() {
 
 		// 初始处理未访问URL的线程池
@@ -234,7 +238,7 @@ public class CrawlerDoor {
 			}
 		};
 	}
-
+	
 	/**
 	 * 多线程（线程池）抓取
 	 * 
@@ -303,6 +307,8 @@ public class CrawlerDoor {
 
 		};
 		t.start();
+		
+		conLinkedQueue.add(t.getId());
 
 		LOG.info("The thread of crawler is starting ...");
 	}
@@ -368,6 +374,22 @@ public class CrawlerDoor {
 			// + LinkQueue.getUnvisitedUrlNum());
 		}
 	}
+	
+	/**
+	 * 获取当前爬虫线程列表
+	 * @return
+	 */
+	public List<String> getThreadList(){
+		
+		return null;
+	}
+	
+	/**
+	 * 取消某个或某些爬虫线程
+	 */
+	public void cancel() {
+		
+	}
 
 	/**
 	 * 爬虫主程序实例
@@ -386,8 +408,9 @@ public class CrawlerDoor {
 		CrawlerDoor crawler = CrawlerDoor.getInstance();
 
 		String[] urls = new String[] { //
-				// "http://www.csdn.net/article/" //
-				"http://www.jd.com" //
+				 "https://www.csdn.net/article" //
+//				"http://www.jd.com" //
+//				"http://news.qq.com"
 		};
 
 		// To crawl the webpage specified by user
@@ -406,5 +429,13 @@ public class CrawlerDoor {
 
 		// // To regex the url
 		// crawler.regexStart("http://e.baidu.com/?refer=888");
+	}
+
+	public ConcurrentLinkedQueue getConLinkedQueue() {
+		return conLinkedQueue;
+	}
+
+	public void setConLinkedQueue(ConcurrentLinkedQueue conLinkedQueue) {
+		this.conLinkedQueue = conLinkedQueue;
 	}
 }

@@ -51,7 +51,7 @@ public class RPCDoor {
 		return Response.ok().build();
 	}
 
-	@POST
+	@GET
 	@Path("crawler")
 	public Response crawlerAPI(@QueryParam("urls") String strUrls) {
 		// String[] urls = strUrls.split(",");
@@ -61,6 +61,7 @@ public class RPCDoor {
 			crawler.crawlingByThreadPool(new String[] { it.next() });
 		}
 		LOG.info("This is the crawler api.");
+		crawler.getConLinkedQueue().forEach(t_id -> System.out.println(t_id));
 		return Response.ok().build();
 	}
 
