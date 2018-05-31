@@ -3,7 +3,6 @@ package com.pyramid.rpc;
 import java.util.Iterator;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import javax.annotation.Resource;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -11,11 +10,9 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 
 import org.apache.log4j.Logger;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Scope;
 
 import com.google.common.base.Splitter;
-import com.pyramid.entity.cache.CrawlerCache;
 import com.pyramid.rpc.crawler.CrawlerDoor;
 import com.pyramid.utils.cache.PropertyConfigurer;
 
@@ -41,7 +38,7 @@ public class RPCDoor {
 	}
 
 	@GET
-	@Path("{param1}")
+	@Path("test/{param1}")
 	public Response testRPC(@PathParam("param1") String param1) {
 		LOG.info("Pyramid: This is a test restful api.");
 		LOG.info("Pyramid: access_domains: " + PropertyConfigurer.getContextProperty("access_domains"));
@@ -49,14 +46,14 @@ public class RPCDoor {
 	}
 
 	@GET
-	@Path("01/{param1}")
+	@Path("test/01/{param1}")
 	public Response testRPC01(@PathParam("param1") String param1) {
 		LOG.info("Pyramid: This is the other test restful api.");
 		return Response.ok().build();
 	}
 
 	@GET
-	@Path("addCrawlers")
+	@Path("crawler/add")
 	public Response crawlerAPI(@QueryParam("urls") String strUrls) {
 		// String[] urls = strUrls.split(",");
 		LOG.info("strUrls: " + strUrls);
@@ -70,7 +67,7 @@ public class RPCDoor {
 	}
 
 	@GET
-	@Path("allCrawlerIDs")
+	@Path("crawler/allIDs")
 	public Response getAllCrawlerIDs() {
 		ConcurrentLinkedQueue conLinkedQueue = crawler.getConLinkedQueue();
 		if (conLinkedQueue.isEmpty()) {
@@ -82,7 +79,7 @@ public class RPCDoor {
 	}
 
 	@GET
-	@Path("cancelCrawlers")
+	@Path("crawler/cancel")
 	public Response cancelCrawlers(@QueryParam("ids") String ids) {
 		LOG.info("ids: " + ids);
 		Iterator<String> it = Splitter.on(",").split(ids).iterator();

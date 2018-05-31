@@ -267,15 +267,11 @@ public class CrawlerDoor {
 		initCrawlerWithSeeds(seeds);
 
 		Thread t = new Thread() {
-
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-
 				while (true) {
-
 					while (linkQueue.getUnVisitedUrl().size() != 0) {
-
 						// 队头URL出队列
 						String visitUrl = (String) linkQueue.unVisitedUrlDeQueue();
 						if (visitUrl == null) {
@@ -307,9 +303,7 @@ public class CrawlerDoor {
 						threadPoolDoor.getExecutorServiceExtract().execute(runnable4Extracting(visitUrl, filter));
 					}
 				}
-
 			}
-
 		};
 		t.start();
 		

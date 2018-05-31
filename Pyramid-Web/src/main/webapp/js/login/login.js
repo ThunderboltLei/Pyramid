@@ -10,7 +10,7 @@ $(function() {
 
 						var form = document.getElementById("loginForm");
 						form.method = "post";
-						form.action = "login/toLogin.fly";
+						form.action = "./login/toLogin.fly";
 						form.submit();
 					});
 
@@ -18,7 +18,7 @@ $(function() {
 			$("[button-register]").click(function() {
 						var form = document.getElementById("loginForm");
 						form.method = "post";
-						form.action = "login/toRegister.fly";
+						form.action = "./login/toRegister.fly";
 						form.submit();
 					});
 		});

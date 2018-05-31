@@ -230,7 +230,8 @@
                                 <li><a href="#"><span
                                         class="glyphicon glyphicon-book"></span>
                                         Docs</a></li>
-                                <li><a href="#">APIs</a></li>
+                                <li><a
+                                    href="<%=basePath%>/followus/help/apis.fly">APIs</a></li>
                             </ol>
                         </div>
                     </div></li>
