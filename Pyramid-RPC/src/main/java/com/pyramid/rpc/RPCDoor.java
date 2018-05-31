@@ -1,6 +1,7 @@
 package com.pyramid.rpc;
 
 import java.util.Iterator;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 import javax.annotation.Resource;
 import javax.ws.rs.GET;
@@ -42,20 +43,20 @@ public class RPCDoor {
 	@GET
 	@Path("{param1}")
 	public Response testRPC(@PathParam("param1") String param1) {
-		LOG.info("This is a test restful api.");
-		LOG.info("access_domains: " + PropertyConfigurer.getContextProperty("access_domains"));
+		LOG.info("Pyramid: This is a test restful api.");
+		LOG.info("Pyramid: access_domains: " + PropertyConfigurer.getContextProperty("access_domains"));
 		return Response.ok().build();
 	}
 
 	@GET
 	@Path("01/{param1}")
 	public Response testRPC01(@PathParam("param1") String param1) {
-		LOG.info("This is the other test restful api.");
+		LOG.info("Pyramid: This is the other test restful api.");
 		return Response.ok().build();
 	}
 
 	@GET
-	@Path("crawler")
+	@Path("addCrawlers")
 	public Response crawlerAPI(@QueryParam("urls") String strUrls) {
 		// String[] urls = strUrls.split(",");
 		LOG.info("strUrls: " + strUrls);
@@ -63,7 +64,35 @@ public class RPCDoor {
 		while (it.hasNext()) {
 			crawler.crawlingByThreadPool(new String[] { it.next() });
 		}
-		LOG.info("This is the crawler api.");
+		LOG.info("Pyramid: This is the crawler api.");
+		crawler.getConLinkedQueue().forEach(t_id -> System.out.println(t_id));
+		return Response.ok().build();
+	}
+
+	@GET
+	@Path("allCrawlerIDs")
+	public Response getAllCrawlerIDs() {
+		ConcurrentLinkedQueue conLinkedQueue = crawler.getConLinkedQueue();
+		if (conLinkedQueue.isEmpty()) {
+			LOG.info("Pyramid: There is no crawler task.");
+		} else {
+			conLinkedQueue.forEach(t_id -> System.out.println(t_id));
+		}
+		return Response.ok().build();
+	}
+
+	@GET
+	@Path("cancelCrawlers")
+	public Response cancelCrawlers(@QueryParam("ids") String ids) {
+		LOG.info("ids: " + ids);
+		Iterator<String> it = Splitter.on(",").split(ids).iterator();
+		ThreadGroup threadGroup = Thread.currentThread().getThreadGroup();
+		if (threadGroup.activeCount() == 0) {
+			LOG.info("Pyramid: There is no crawler thread to kill.");
+		} else {
+			// 根据线程 ID 取消相关的爬虫任务
+		}
+		LOG.info("Pyramid: This is the crawler api.");
 		crawler.getConLinkedQueue().forEach(t_id -> System.out.println(t_id));
 		return Response.ok().build();
 	}

@@ -4,8 +4,6 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 
-import com.pyramid.utils.cache.PropertyConfigurer;
-
 /**
  * 
  * @Author: lm8212<br>

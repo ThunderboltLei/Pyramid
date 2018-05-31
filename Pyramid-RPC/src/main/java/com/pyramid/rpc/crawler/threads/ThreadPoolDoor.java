@@ -3,6 +3,11 @@ package com.pyramid.rpc.crawler.threads;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import org.apache.log4j.Logger;
+import org.springframework.context.annotation.Scope;
+
+import com.pyramid.utils.cache.PropertyConfigurer;
+
 /**
  * 
  * @author leiming4
@@ -10,13 +15,16 @@ import java.util.concurrent.Executors;
  * @description 创建线程池处理未访问的URL<br>
  *
  */
+@Scope("singleton")
 public class ThreadPoolDoor {
+
+	private static final Logger LOG = Logger.getLogger(ThreadPoolDoor.class);
 
 	private ExecutorService executorServiceDownload = null;
 	private ExecutorService executorServiceExtract = null;
 
-	private final static int THREAD_POOL_DOWNLOAD = 200;
-	private final static int THREAD_POOL_EXTRACT = 100;
+	private int THREAD_POOL_DOWNLOAD = 100;
+	private int THREAD_POOL_EXTRACT = 50;
 
 	/**
 	 * constructer with no parameter
@@ -24,6 +32,14 @@ public class ThreadPoolDoor {
 	public ThreadPoolDoor() {
 		// int THREAD_COUNT = Integer.parseInt(PropertiesUtil.getInstance()
 		// .readValue("THREAD_COUNT").trim());
+
+		this.THREAD_POOL_DOWNLOAD = Integer
+				.parseInt(PropertyConfigurer.getContextProperty("downloading_thread_pool_size"));
+		this.THREAD_POOL_EXTRACT = Integer
+				.parseInt(PropertyConfigurer.getContextProperty("extracting_thread_pool_size"));
+		LOG.info("--->>> ThreadPoolDoor: THREAD_POOL_DOWNLOAD = " + this.THREAD_POOL_DOWNLOAD
+				+ ", THREAD_POOL_EXTRACT = " + this.THREAD_POOL_EXTRACT);
+
 		this.executorServiceDownload = Executors.newFixedThreadPool(THREAD_POOL_DOWNLOAD);
 		this.executorServiceExtract = Executors.newFixedThreadPool(THREAD_POOL_EXTRACT);
 	}
