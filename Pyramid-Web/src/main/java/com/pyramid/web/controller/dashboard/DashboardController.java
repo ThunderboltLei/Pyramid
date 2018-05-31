@@ -18,14 +18,10 @@ import com.pyramid.web.controller.base.BaseController;
 @RequestMapping("dashboard")
 public class DashboardController extends BaseController {
 
-	private Logger logger = Logger.getLogger(getClass());
+	private static final Logger LOG = Logger.getLogger(DashboardController.class);
 
 	@Resource(name = "loginServiceImpl")
 	private LoginService loginService;
-
-	public DashboardController() {
-		// TODO Auto-generated constructor stub
-	}
 
 	/**
 	 * 
@@ -38,7 +34,7 @@ public class DashboardController extends BaseController {
 	@RequestMapping(value = "toDashboard")
 	public String toDashboard(HttpServletRequest request, HttpServletResponse response, Model model)
 			throws IOException {
-		logger.info("----- toDashboard -----");
+		LOG.info("----- toDashboard -----");
 		return "/page/dashboard.jsp";
 	}
 

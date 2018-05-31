@@ -2,6 +2,12 @@ package com.pyramid.web.controller.base;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Lazy;
+
+import com.pyramid.rpc.RPCCache;
+
 /**
  * 
  * @Author: lm8212<br>
@@ -11,14 +17,21 @@ import javax.servlet.http.HttpServletRequest;
  * @File: BaseController.java<br>
  * @Description: <br>
  */
-public class BaseController {
+public abstract class BaseController {
 
-	// 默认查询行数为10行
+	private static final Logger LOG = Logger.getLogger(BaseController.class);
+
+	public BaseController() {
+		// TODO Auto-generated constructor stub
+
+	}
+
+	// ----- page -----// 默认查询行数为10行
 	protected static final int DEFAULT_PAGE_SIZE = 10;
 
 	public String getPath(HttpServletRequest request) {
-		String basePath = request.getScheme() + "://" + request.getServerName()
-				+ ":" + request.getServerPort() + request.getContextPath();
+		String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+				+ request.getContextPath();
 		return basePath;
 	}
 
@@ -35,4 +48,5 @@ public class BaseController {
 			}
 		}
 	}
+
 }

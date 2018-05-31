@@ -31,7 +31,7 @@ import com.pyramid.web.controller.base.BaseController;
 @RequestMapping("login")
 public class LoginController extends BaseController {
 
-	private Logger logger = Logger.getLogger(getClass());
+	private static final Logger LOG = Logger.getLogger(LoginController.class);
 
 	@Resource(name = "loginServiceImpl")
 	private LoginService loginService;
@@ -96,7 +96,7 @@ public class LoginController extends BaseController {
 	public String toLogin(HttpServletRequest request, HttpServletResponse response, Model model) throws IOException {
 		String email = request.getParameter("loginEMail");
 		String password = request.getParameter("loginPassword");
-		logger.info("----- login -----\nemail: " + email + ", password: " + password);
+		LOG.info("----- login -----\nemail: " + email + ", password: " + password);
 
 		// boolean bool = loginService.login(email, password);
 		// return bool == true ? "/page/main.jsp" : "/page/error.jsp";
@@ -113,7 +113,7 @@ public class LoginController extends BaseController {
 	 */
 	@RequestMapping(value = "toRegister")
 	public String toRegister(HttpServletRequest request, HttpServletResponse response, Model model) throws IOException {
-		logger.info("----- toRegister -----");
+		LOG.info("----- toRegister -----");
 		return "/page/panels.jsp";
 	}
 

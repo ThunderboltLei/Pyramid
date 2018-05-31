@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
-    xmlns:context="http://www.springframework.org/schema/context"
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
     xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p"
     xmlns:task="http://www.springframework.org/schema/task" xmlns:tx="http://www.springframework.org/schema/tx"
     xmlns:util="http://www.springframework.org/schema/util"
@@ -21,6 +20,10 @@
 	http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd"
     default-autowire="byName">
 
+    <!-- 可实现加载配置文件 -->
+<!--     <util:properties id="crawler" -->
+<!--         location="classpath*:properties/crawler.properties" /> -->
+
     <!-- 主配置文件 -->
     <mvc:annotation-driven />
 
@@ -37,6 +40,8 @@
                 <value>classpath*:properties/hibernate.properties
                 </value>
                 <value>classpath*:properties/analyzer-word.properties
+                </value>
+                <value>classpath*:properties/crawler.properties
                 </value>
                 <!--要是有多个配置文件，只需在这里继续添加即可 -->
             </list>
@@ -58,4 +63,6 @@
 
     <!-- 定时任务配置文件 -->
     <import resource="/spring/spring-config-job.xml" />
+
+
 </beans>

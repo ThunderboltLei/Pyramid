@@ -15,7 +15,7 @@
     8、WEB 应用的 HA 实现（暂未实现）
 
 编译顺序：
-    mvn clean install -Dmaven.test.skip=true (-X)
+    mvn clean package -Dmaven.test.skip=true -DskipTests=true (-X)
 
     1、DB - 数据库访问层
     2、Entity - 实体映射
