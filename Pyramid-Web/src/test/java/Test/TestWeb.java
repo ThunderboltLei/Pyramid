@@ -17,7 +17,7 @@ public class TestWeb {
 	private CrawlerCache crawlerCache;
 
 	/**
-	 * 测试Spring注解获取properties文件的值
+	 * 测试 spring 注解获取 properties 文件的值
 	 */
 	@Test
 	public void test01() {

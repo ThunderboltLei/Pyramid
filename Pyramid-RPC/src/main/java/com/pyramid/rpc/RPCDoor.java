@@ -10,13 +10,13 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 import com.google.common.base.Splitter;
 import com.pyramid.entity.cache.CrawlerCache;
 import com.pyramid.rpc.crawler.CrawlerDoor;
+import com.pyramid.utils.cache.PropertyConfigurer;
 
 /**
  * 
@@ -26,7 +26,6 @@ import com.pyramid.rpc.crawler.CrawlerDoor;
  *              directory.
  *
  */
-@Component
 @Path("/door/")
 @Scope("prototype")
 public class RPCDoor {
@@ -35,24 +34,16 @@ public class RPCDoor {
 
 	private CrawlerDoor crawler;
 
-	private RPCCache rpcCache;
-
-	// @Resource(name = "crawlerCache")
-	@Autowired
-	private CrawlerCache crawlerCache;
-
 	public RPCDoor() {
-		// TODO Auto-generated constructor stub
 		crawler = CrawlerDoor.getInstance();
 		LOG.info(crawler.toString());
-		rpcCache = RPCCache.getInstance();
 	}
 
 	@GET
 	@Path("{param1}")
 	public Response testRPC(@PathParam("param1") String param1) {
 		LOG.info("This is a test restful api.");
-		LOG.info("ACCESS_DOMAINS = " + crawlerCache.getAccessDomains());
+		LOG.info("access_domains: " + PropertyConfigurer.getContextProperty("access_domains"));
 		return Response.ok().build();
 	}
 

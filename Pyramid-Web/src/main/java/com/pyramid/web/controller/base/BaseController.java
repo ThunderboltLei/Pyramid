@@ -3,10 +3,8 @@ package com.pyramid.web.controller.base;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Lazy;
 
-import com.pyramid.rpc.RPCCache;
+import com.pyramid.utils.cache.PropertyConfigurer;
 
 /**
  * 
@@ -22,8 +20,8 @@ public abstract class BaseController {
 	private static final Logger LOG = Logger.getLogger(BaseController.class);
 
 	public BaseController() {
-		// TODO Auto-generated constructor stub
-
+		// LOG.info("access_domains: " +
+		// PropertyConfigurer.getContextProperty("access_domains"));
 	}
 
 	// ----- page -----// 默认查询行数为10行

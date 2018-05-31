@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.pyramid.datasource.DataSourceContextHanlder;
+import com.pyramid.entity.cache.CrawlerCache;
 import com.pyramid.service.login.LoginService;
 import com.pyramid.web.controller.base.BaseController;
 
