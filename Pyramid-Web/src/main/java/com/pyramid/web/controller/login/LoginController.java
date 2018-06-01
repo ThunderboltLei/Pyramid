@@ -115,7 +115,7 @@ public class LoginController extends BaseController {
 	@RequestMapping(value = "toRegister")
 	public String toRegister(HttpServletRequest request, HttpServletResponse response, Model model) throws IOException {
 		LOG.info("----- toRegister -----");
-		return "/page/panels.jsp";
+		return "/page/register.jsp";
 	}
 
 }

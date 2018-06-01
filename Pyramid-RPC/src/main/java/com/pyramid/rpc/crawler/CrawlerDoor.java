@@ -3,7 +3,7 @@ package com.pyramid.rpc.crawler;
 import java.io.File;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,7 +33,7 @@ public class CrawlerDoor {
 
 	private LinkQueue linkQueue = null;
 
-	private ConcurrentLinkedQueue conLinkedQueue = new ConcurrentLinkedQueue<>();
+	private CopyOnWriteArrayList conwArrayList = new CopyOnWriteArrayList<>();
 	
 	public CrawlerDoor() {
 
@@ -307,7 +307,7 @@ public class CrawlerDoor {
 		};
 		t.start();
 		
-		conLinkedQueue.add(t.getId());
+		conwArrayList.add(t.getId());
 
 		LOG.info("The thread of crawler is starting ...");
 	}
@@ -430,11 +430,12 @@ public class CrawlerDoor {
 		// crawler.regexStart("http://e.baidu.com/?refer=888");
 	}
 
-	public ConcurrentLinkedQueue getConLinkedQueue() {
-		return conLinkedQueue;
+	public CopyOnWriteArrayList getConwArrayList() {
+		return conwArrayList;
 	}
 
-	public void setConLinkedQueue(ConcurrentLinkedQueue conLinkedQueue) {
-		this.conLinkedQueue = conLinkedQueue;
+	public void setConwArrayList(CopyOnWriteArrayList conwArrayList) {
+		this.conwArrayList = conwArrayList;
 	}
+
 }

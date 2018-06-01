@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
@@ -11,7 +11,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="PYRAMID Platform By L.M. On July 2014">
+<meta name="description" content="PYRAMID Platform By L.M. On July 2018">
 <meta name="author" content="L.M.">
 <title>PYRAMID</title>
 <link rel="icon" href="<%=path%>/img/PYRAMID.ico" />
@@ -113,7 +113,7 @@
                             type="text" value="" /> <img class="true"
                             src="<%=path%>/img/checkSmall.png" /> <img
                             class="false"
-                            src="<%=path%>/img//crossSmall.png" />
+                            src="<%=path%>/img/crossSmall.png" />
                     </div>
                     你的邮箱地址：<br />
                     <div class="inputHolder">
@@ -122,7 +122,7 @@
                             type="text" value="" /> <img class="true"
                             src="<%=path%>/img//checkSmall.png" /> <img
                             class="false"
-                            src="<%=path%>/img//crossSmall.png" />
+                            src="<%=path%>/img/crossSmall.png" />
                         <div class="tooltip"
                             style="top: -35px; right: 32px;" id="inuse">
                             <div class="tLeft"></div>

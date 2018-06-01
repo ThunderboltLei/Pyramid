@@ -11,7 +11,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="PYRAMID Platform By L.M. On July 2014">
+<meta name="description" content="PYRAMID Platform By L.M. On July 2018">
 <meta name="author" content="L.M.">
 <title>PYRAMID</title>
 <link rel="icon" href="<%=path%>/img/PYRAMID.ico" />

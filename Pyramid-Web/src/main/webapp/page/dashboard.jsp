@@ -12,7 +12,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-<meta name="description" content="PYRAMID Platform By L.M. On July 2014">
+<meta name="description" content="PYRAMID Platform By L.M. On July 2018">
 <meta name="author" content="L.M.">
 <title>PYRAMID</title>
 <link rel="icon" href="<%=path%>/img/PYRAMID.ico">
