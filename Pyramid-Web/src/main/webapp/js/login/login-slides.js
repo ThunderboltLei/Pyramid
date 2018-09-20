@@ -2,6 +2,7 @@
  * 滑动页初始化
  */
 $(function() {
+	
 			$('#slide_one').highcharts({
 				title : {
 					text : '准妈妈入院登记数据统计',

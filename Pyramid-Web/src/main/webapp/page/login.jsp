@@ -13,16 +13,17 @@
 <meta name="description" content="PYRAMID Platform By L.M. On July 2018">
 <meta name="author" content="L.M.">
 <title>PYRAMID</title>
+<!-- link -->
 <link rel="icon" href="<%=path%>/img/PYRAMID.ico" />
 <link rel="stylesheet" href="<%=path%>/css/jquery/jquery-ui.css" />
 <link rel="stylesheet" href="<%=path%>/css/bootstrap/bootstrap.min.css" />
 <link rel="stylesheet" href="<%=path%>/css/bootstrap/bootstrap-theme.min.css" />
 <link rel="stylesheet" href="<%=path%>/css/carousel.css" />
+<!-- JS -->
 <script type="text/javascript" src="<%=path%>/js/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="<%=path%>/js/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="<%=path%>/js/highcharts/highcharts.js"></script>
 <script type="text/javascript" src="<%=path%>/js/highcharts/modules/exporting.js"></script>
-
 <!-- Custom JS -->
 <script type="text/javascript" src="<%=path%>/js/login/login.js"></script>
 <script type="text/javascript" src="<%=path%>/js/login/login-slides.js"></script>
