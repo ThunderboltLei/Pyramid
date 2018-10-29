@@ -13,194 +13,68 @@
                         class="glyphicon glyphicon-home"></span> Home</a></li>
                 <li><a
                     href="http://sc.chinaz.com/?categories-archives/"
-                    class="arrow">Categories</a> <!-- <div class="mega-menu full-width"> full-widthè®¾ç½®èåä¸ºé¡µé¢å®½åº¦-->
+                    class="arrow">准妈妈孕期信息服务管理系统</a> <!-- <div class="mega-menu full-width"> full-widthè®¾ç½®èåä¸ºé¡µé¢å®½åº¦-->
                     <div class="mega-menu">
                         <div class="col-1">
                             <h4>
                                 <a
-                                    href="http://sc.chinaz.com/?category/graphics-design/">Graphic
-                                    Design</a>
+                                    href="http://sc.chinaz.com/?category/graphics-design/">账号管理</a>
                             </h4>
                             <ol>
                                 <li><a
-                                    href="http://sc.chinaz.com/?category/graphics-design/">Design</a></li>
+                                    href="http://sc.chinaz.com/?category/graphics-design/">准妈妈</a></li>
                                 <li><a
-                                    href="http://sc.chinaz.com/?category/logos/">Logo
-                                        Design</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?category/tutorials/">Tutorials</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?category/mehndi-designs/">Mehndi
-                                        Designs</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?tag/vector-graphics/">Vector
-                                        Graphics</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?category/wallpapers/">Wallpapers</a></li>
+                                    href="http://sc.chinaz.com/?category/logos/">医师</a></li>
                             </ol>
                         </div>
                         <div class="col-1">
                             <h4>
                                 <a
-                                    href="http://sc.chinaz.com/?category/website-designing/">Web
-                                    Design</a>
+                                    href="http://sc.chinaz.com/?category/website-designing/">信息管理</a>
                             </h4>
                             <ol>
                                 <li><a
-                                    href="http://sc.chinaz.com/?category/website-designing/">Website
-                                        Design</a></li>
+                                    href="http://sc.chinaz.com/?category/website-designing/">准妈妈信息</a></li>
                                 <li><a
-                                    href="http://sc.chinaz.com/?category/html5-css3/">HTML5
-                                        &amp; CSS3</a></li>
+                                    href="http://sc.chinaz.com/?category/html5-css3/">医师信息</a></li>
                                 <li><a
-                                    href="http://sc.chinaz.com/?category/jquery/">jQuery</a></li>
+                                    href="http://sc.chinaz.com/?category/jquery/">准妈妈检查报告结果信息</a></li>
                                 <li><a
-                                    href="http://sc.chinaz.com/?category/javascript-2/">Javascript</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?category/code/">Coding</a></li>
+                                    href="http://sc.chinaz.com/?category/javascript-2/">孕检流程信息</a></li>
                             </ol>
                         </div>
                         <div class="col-1">
                             <h4>
                                 <a
-                                    href="http://sc.chinaz.com/?tag/freebie/">Freebies</a>
+                                    href="http://sc.chinaz.com/?tag/freebie/">数据管理</a>
                             </h4>
                             <ol>
                                 <li><a
-                                    href="http://sc.chinaz.com/?category/fonts/">Free
-                                        Fonts</a></li>
+                                    href="http://sc.chinaz.com/?category/icons/">年龄分布图</a></li>
                                 <li><a
-                                    href="http://sc.chinaz.com/?category/icons/">Icons</a></li>
+                                    href="http://sc.chinaz.com/?category/psd-files/">怀孕周期分布图</a></li>
                                 <li><a
-                                    href="http://sc.chinaz.com/?category/psd-files/">Free
-                                        PSD Files</a></li>
+                                    href="http://sc.chinaz.com/?category/psd-files/">体重趋势图</a></li>
                                 <li><a
-                                    href="http://sc.chinaz.com/?tag/free-templates/">PSD
-                                        Templats</a></li>
+                                    href="http://sc.chinaz.com/?category/fonts/">孕检结果综合值趋势图</a></li>
                                 <li><a
-                                    href="http://sc.chinaz.com/?category/software-utilities/">Software
-                                        &amp; Utilities</a></li>
+                                    href="http://sc.chinaz.com/?tag/free-templates/">婴儿性别比例分布图</a></li>
+                                <li><a
+                                    href="http://sc.chinaz.com/?category/software-utilities/">事故统计图</a></li>
                             </ol>
                         </div>
                         <div class="col-1">
                             <h4>
                                 <a
-                                    href="http://sc.chinaz.com/?tag/inspiration/">Inspiration</a>
+                                    href="http://sc.chinaz.com/?tag/inspiration/">系统管理</a>
                             </h4>
                             <ol>
                                 <li><a
-                                    href="http://sc.chinaz.com/?tag/business-cards/">Business
-                                        Cards</a></li>
+                                    href="http://sc.chinaz.com/?tag/business-cards/">孕检预约</a></li>
                                 <li><a
-                                    href="http://sc.chinaz.com/?category/photography-2/">Photography</a></li>
+                                    href="http://sc.chinaz.com/?category/photography-2/">检查报告进度提醒</a></li>
                                 <li><a
-                                    href="http://sc.chinaz.com/?tag/poster-design/">Poster
-                                        Design</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?tag/typography/">Typography</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?tag/illustration-art/">Illustration
-                                        Art</a></li>
-                            </ol>
-                        </div>
-                        <div class="col-1">
-                            <h4>
-                                <a
-                                    href="http://sc.chinaz.com/?category/wordpress/">Wordpress</a>
-                            </h4>
-                            <ol>
-                                <li><a
-                                    href="http://sc.chinaz.com/?category/wordpress-themes/">Wordpress
-                                        Themes</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?tag/wordpress-plugins/">Wordpress
-                                        Plugins</a></li>
-                            </ol>
-                        </div>
-                        <div class="col-1">
-                            <h4>
-                                <a
-                                    href="http://sc.chinaz.com/?category/technology/">Technology</a>
-                            </h4>
-                            <ol>
-                                <li><a
-                                    href="http://sc.chinaz.com/?category/apple/">Apple</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?category/google/">Google</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?category/facebook/">Facebook</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?category/iphone-games/">iPhone
-                                        Games</a></li>
-                                <li><a
-                                    href="http://sc.chinaz.com/?category/mobile-app-software/">iPhone
-                                        Apps</a></li>
-                            </ol>
-                        </div>
-                    </div></li>
-                <li><a href="http://sc.chinaz.com/?social-share/"
-                    class="arrow">Follow Us</a>
-                    <ul>
-                        <li><a
-                            href="http://sc.chinaz.com/?karachicorner"
-                            class="rss" title="Subscribe to RSS">RSS</a></li>
-                        <li><a href="http://sc.chinaz.com"
-                            class="twitter" title="Follow us on Twitter">Twitter</a></li>
-                        <li><a href="http://sc.chinaz.com"
-                            class="facebook"
-                            title="Follow us on Facebook">Facebook</a></li>
-                        <li><a href="https://sc.chinaz.com"
-                            class="googleplus"
-                            title="Follow us on Google+">Google+</a></li>
-                        <li><a href="http://sc.chinaz.com/"
-                            class="pinterest"
-                            title="Follow us on Pinterest">Pinterest</a></li>
-                        <li><a href="http://sc.chinaz.com"
-                            class="stumbleupon"
-                            title="Follow us on Stumbleupon">Stumbleupon</a></li>
-                    </ul></li>
-                <li><a href="#" class="arrow">Algorithms</a>
-                    <div class="mega-menu">
-                        <div class="col-1">
-                            <h4>
-                                <a href="#">Sorting</a>
-                            </h4>
-                            <ol>
-                                <li><a href="#">Quick Sorting</a></li>
-                                <li><a href="#">Bubble Sorting</a></li>
-                                <li><a href="#">Merge Sorting</a></li>
-                                <li><a href="#">Selection
-                                        Sorting</a></li>
-                                <li><a href="#">Insertion
-                                        Sorting</a></li>
-                                <li><a href="#">Shell Sorting</a></li>
-                                <li><a href="#">Heap Sorting</a></li>
-                            </ol>
-                        </div>
-                        <div class="col-1">
-                            <h4>
-                                <a href="#">Clusterings</a>
-                            </h4>
-                            <ol>
-                                <li><a href="#">Design</a></li>
-                                <li><a href="#">Logo Design</a></li>
-                                <li><a href="#">Tutorials</a></li>
-                                <li><a href="#">Mehndi Designs</a></li>
-                                <li><a href="#">Vector Graphics</a></li>
-                                <li><a href="#">Wallpapers</a></li>
-                            </ol>
-                        </div>
-                        <div class="col-1">
-                            <h4>
-                                <a href="#">Classifications</a>
-                            </h4>
-                            <ol>
-                                <li><a href="#">Website Design</a></li>
-                                <li><a href="#">HTML5 &amp;
-                                        CSS3</a></li>
-                                <li><a href="#">jQuery</a></li>
-                                <li><a href="#">Javascript</a></li>
-                                <li><a href="#">Coding</a></li>
+                                    href="http://sc.chinaz.com/?tag/poster-design/">营养建议</a></li>
                             </ol>
                         </div>
                     </div></li>
