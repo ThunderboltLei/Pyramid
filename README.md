@@ -12,7 +12,7 @@
     4. 开发基于LUCENE的分词，并实现中文与拼音之间的转换（未整合）
     5. 开发界面，实现 Restful 访问，进行数据展示，以及对爬虫指令的设置。（未整合）
     6. 整合HADOOP及相关组件（视以后应用到的组件而定），对爬虫数据进行处理。（未整合）
-    7. 集成流处理（如 STORM, KAFKA STREAMING, SPARK STREAMING 供用户选择）。（未实现）
+    7. 集成流处理（如 STORM, KAFKA STREAMING, SPARK STREAMING 供用户选择）。（未实现：需要结合自定义 Docker 镜像 - centos_dbcluster_db）
     8. WEB 应用的 HA 实现（暂未实现）</br>
 
 编译顺序：
