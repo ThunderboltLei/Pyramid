@@ -57,7 +57,7 @@
         <dependency>
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-core</artifactId>
-            <version>5.5.4</version>
+            <version>8.8.2</version>
         </dependency>
         <!-- 测试分词 -->
         <dependency>
